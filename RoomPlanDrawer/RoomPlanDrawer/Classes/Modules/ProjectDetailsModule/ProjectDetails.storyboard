@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Project Details View-->
+        <scene sceneID="SXb-CK-3zy">
+            <objects>
+                <viewController storyboardIdentifier="ProjectDetailsView" id="bW4-SE-Kvj" customClass="ProjectDetailsView" customModule="RoomPlanDrawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BI5-GD-Du2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" minimumZoomScale="1.1000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="rgR-hQ-NEY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-Gv-5Mw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="adl-Lk-Neq"/>
+                                            <constraint firstAttribute="height" constant="818" id="pWF-1v-l4I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WcA-Gv-5Mw" firstAttribute="top" secondItem="rgR-hQ-NEY" secondAttribute="top" id="ROF-Fx-94V"/>
+                                    <constraint firstItem="WcA-Gv-5Mw" firstAttribute="leading" secondItem="rgR-hQ-NEY" secondAttribute="leading" id="S4C-CC-PBY"/>
+                                    <constraint firstAttribute="bottom" secondItem="WcA-Gv-5Mw" secondAttribute="bottom" id="jaj-Mp-avx"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcA-Gv-5Mw" secondAttribute="trailing" id="mq4-JJ-h0x"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DZ2-H5-dg8" firstAttribute="bottom" secondItem="rgR-hQ-NEY" secondAttribute="bottom" id="DAr-SF-CuL"/>
+                            <constraint firstItem="rgR-hQ-NEY" firstAttribute="top" secondItem="DZ2-H5-dg8" secondAttribute="top" id="VJc-mV-8wh"/>
+                            <constraint firstItem="rgR-hQ-NEY" firstAttribute="leading" secondItem="DZ2-H5-dg8" secondAttribute="leading" id="X0k-Fk-PMW"/>
+                            <constraint firstItem="DZ2-H5-dg8" firstAttribute="trailing" secondItem="rgR-hQ-NEY" secondAttribute="trailing" id="vHn-Lw-zZw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DZ2-H5-dg8"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollContentView" destination="WcA-Gv-5Mw" id="oNQ-Ii-jAO"/>
+                        <outlet property="scrollView" destination="rgR-hQ-NEY" id="XAe-bh-lHX"/>
+                        <outlet property="scrollViewContentHeight" destination="pWF-1v-l4I" id="Pet-UA-bWy"/>
+                        <outlet property="scrollViewContentWidth" destination="adl-Lk-Neq" id="Wcs-7H-1Xz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtL-Ns-WbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="18.75"/>
+        </scene>
+    </scenes>
+</document>

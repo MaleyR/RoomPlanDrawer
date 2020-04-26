@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC24B043244BC0FE00E50AA4 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B042244BC0FE00E50AA4 /* Project.swift */; };
+		AC24B045244BC13F00E50AA4 /* ProjectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B044244BC13F00E50AA4 /* ProjectItem.swift */; };
+		AC24B047244BC18300E50AA4 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B046244BC18300E50AA4 /* Floor.swift */; };
+		AC24B049244BC21000E50AA4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B048244BC21000E50AA4 /* Room.swift */; };
+		AC24B04B244BC25600E50AA4 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B04A244BC25600E50AA4 /* Wall.swift */; };
+		AC24B04D244BC29800E50AA4 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B04C244BC29800E50AA4 /* Point.swift */; };
+		AC24B04F244BC38D00E50AA4 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B04E244BC38D00E50AA4 /* Window.swift */; };
+		AC24B051244BCD0800E50AA4 /* DrawableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B050244BCD0800E50AA4 /* DrawableElement.swift */; };
+		AC24B054244BD35900E50AA4 /* DrawEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B053244BD35900E50AA4 /* DrawEngine.swift */; };
+		AC24B063244CA88700E50AA4 /* RPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B062244CA88700E50AA4 /* RPError.swift */; };
+		AC24B065244CB3EB00E50AA4 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B064244CB3EB00E50AA4 /* Projects.swift */; };
+		AC24B067244CE75B00E50AA4 /* DrawableElementWithChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24B066244CE75B00E50AA4 /* DrawableElementWithChild.swift */; };
+		AC78BE41244903D70012E9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78BE40244903D70012E9EC /* AppDelegate.swift */; };
+		AC78BE4A244903DC0012E9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC78BE49244903DC0012E9EC /* Assets.xcassets */; };
+		AC78BE4D244903DC0012E9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC78BE4B244903DC0012E9EC /* LaunchScreen.storyboard */; };
+		AC90B9BA244FD559002A33E6 /* DrawerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9B9244FD559002A33E6 /* DrawerBuilder.swift */; };
+		AC90B9C524502BA0002A33E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9BE24502BA0002A33E6 /* NetworkManager.swift */; };
+		AC90B9C624502BA0002A33E6 /* ProjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9C024502BA0002A33E6 /* ProjectRequest.swift */; };
+		AC90B9C724502BA0002A33E6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9C124502BA0002A33E6 /* NetworkRequest.swift */; };
+		AC90B9C824502BA0002A33E6 /* ProjectsFlowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9C324502BA0002A33E6 /* ProjectsFlowType.swift */; };
+		AC90B9C924502BA0002A33E6 /* ProjectsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9C424502BA0002A33E6 /* ProjectsFlow.swift */; };
+		AC90B9CC24504409002A33E6 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9CB24504408002A33E6 /* LoadableView.swift */; };
+		AC90B9D12450AD01002A33E6 /* RoomDrawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9D02450AD01002A33E6 /* RoomDrawModel.swift */; };
+		AC90B9D32450AD0C002A33E6 /* WallDrawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9D22450AD0C002A33E6 /* WallDrawModel.swift */; };
+		AC90B9D52450AD25002A33E6 /* PointDrawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90B9D42450AD25002A33E6 /* PointDrawModel.swift */; };
+		AC9CC231245387EF00A486AA /* RoomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9CC230245387EF00A486AA /* RoomDrawer.swift */; };
+		ACC7A286244CF3370036B0C1 /* ProjectsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7A285244CF3370036B0C1 /* ProjectsList.storyboard */; };
+		ACC7A288244CF35F0036B0C1 /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A287244CF35F0036B0C1 /* ProjectsListView.swift */; };
+		ACC7A28A244CF36A0036B0C1 /* ProjectsListViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A289244CF36A0036B0C1 /* ProjectsListViewType.swift */; };
+		ACC7A28C244CF3790036B0C1 /* ProjectsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A28B244CF3790036B0C1 /* ProjectsListRouter.swift */; };
+		ACC7A28E244CF3840036B0C1 /* ProjectsListRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A28D244CF3840036B0C1 /* ProjectsListRouterType.swift */; };
+		ACC7A290244CF3900036B0C1 /* ProjectsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A28F244CF3900036B0C1 /* ProjectsListPresenter.swift */; };
+		ACC7A292244CF39B0036B0C1 /* ProjectsListPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A291244CF39B0036B0C1 /* ProjectsListPresenterType.swift */; };
+		ACC7A294244CF3AA0036B0C1 /* ProjectsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A293244CF3AA0036B0C1 /* ProjectsListAssembly.swift */; };
+		ACC7A297244CFAA90036B0C1 /* ProjectsListTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A296244CFAA90036B0C1 /* ProjectsListTableDataSource.swift */; };
+		ACC7A299244CFAB40036B0C1 /* ProjectsListTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A298244CFAB40036B0C1 /* ProjectsListTableDelegate.swift */; };
+		ACC7A29C244D0A2F0036B0C1 /* ProjectsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A29B244D0A2F0036B0C1 /* ProjectsLoader.swift */; };
+		ACC7A2A2244D11A70036B0C1 /* ProjectDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7A2A1244D11A70036B0C1 /* ProjectDetails.storyboard */; };
+		ACC7A2A4244D11F80036B0C1 /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2A3244D11F80036B0C1 /* ProjectDetailsView.swift */; };
+		ACC7A2A6244D12060036B0C1 /* ProjectDetailsViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2A5244D12060036B0C1 /* ProjectDetailsViewType.swift */; };
+		ACC7A2A8244D12100036B0C1 /* ProjectDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2A7244D12100036B0C1 /* ProjectDetailsRouter.swift */; };
+		ACC7A2AA244D121C0036B0C1 /* ProjectDetailsRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2A9244D121C0036B0C1 /* ProjectDetailsRouterType.swift */; };
+		ACC7A2AC244D12270036B0C1 /* ProjectDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2AB244D12270036B0C1 /* ProjectDetailsPresenter.swift */; };
+		ACC7A2AE244D12320036B0C1 /* ProjectDetailsPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2AD244D12320036B0C1 /* ProjectDetailsPresenterType.swift */; };
+		ACC7A2B0244D123D0036B0C1 /* ProjectDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2AF244D123D0036B0C1 /* ProjectDetailsAssembly.swift */; };
+		ACC7A2B2244D14C20036B0C1 /* ProjectsLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2B1244D14C20036B0C1 /* ProjectsLoaderType.swift */; };
+		ACC7A2D9244DF4D70036B0C1 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7A2D8244DF4D70036B0C1 /* Drawable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC24B042244BC0FE00E50AA4 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		AC24B044244BC13F00E50AA4 /* ProjectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItem.swift; sourceTree = "<group>"; };
+		AC24B046244BC18300E50AA4 /* Floor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		AC24B048244BC21000E50AA4 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		AC24B04A244BC25600E50AA4 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		AC24B04C244BC29800E50AA4 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		AC24B04E244BC38D00E50AA4 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		AC24B050244BCD0800E50AA4 /* DrawableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableElement.swift; sourceTree = "<group>"; };
+		AC24B053244BD35900E50AA4 /* DrawEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawEngine.swift; sourceTree = "<group>"; };
+		AC24B062244CA88700E50AA4 /* RPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPError.swift; sourceTree = "<group>"; };
+		AC24B064244CB3EB00E50AA4 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		AC24B066244CE75B00E50AA4 /* DrawableElementWithChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableElementWithChild.swift; sourceTree = "<group>"; };
+		AC78BE3D244903D70012E9EC /* RoomPlanDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomPlanDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC78BE40244903D70012E9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC78BE49244903DC0012E9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC78BE4C244903DC0012E9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC78BE4E244903DC0012E9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC90B9B9244FD559002A33E6 /* DrawerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerBuilder.swift; sourceTree = "<group>"; };
+		AC90B9BE24502BA0002A33E6 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC90B9C024502BA0002A33E6 /* ProjectRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectRequest.swift; sourceTree = "<group>"; };
+		AC90B9C124502BA0002A33E6 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		AC90B9C324502BA0002A33E6 /* ProjectsFlowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsFlowType.swift; sourceTree = "<group>"; };
+		AC90B9C424502BA0002A33E6 /* ProjectsFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsFlow.swift; sourceTree = "<group>"; };
+		AC90B9CB24504408002A33E6 /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
+		AC90B9D02450AD01002A33E6 /* RoomDrawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDrawModel.swift; sourceTree = "<group>"; };
+		AC90B9D22450AD0C002A33E6 /* WallDrawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallDrawModel.swift; sourceTree = "<group>"; };
+		AC90B9D42450AD25002A33E6 /* PointDrawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointDrawModel.swift; sourceTree = "<group>"; };
+		AC9CC230245387EF00A486AA /* RoomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDrawer.swift; sourceTree = "<group>"; };
+		ACC7A285244CF3370036B0C1 /* ProjectsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectsList.storyboard; sourceTree = "<group>"; };
+		ACC7A287244CF35F0036B0C1 /* ProjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListView.swift; sourceTree = "<group>"; };
+		ACC7A289244CF36A0036B0C1 /* ProjectsListViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListViewType.swift; sourceTree = "<group>"; };
+		ACC7A28B244CF3790036B0C1 /* ProjectsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListRouter.swift; sourceTree = "<group>"; };
+		ACC7A28D244CF3840036B0C1 /* ProjectsListRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListRouterType.swift; sourceTree = "<group>"; };
+		ACC7A28F244CF3900036B0C1 /* ProjectsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListPresenter.swift; sourceTree = "<group>"; };
+		ACC7A291244CF39B0036B0C1 /* ProjectsListPresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListPresenterType.swift; sourceTree = "<group>"; };
+		ACC7A293244CF3AA0036B0C1 /* ProjectsListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListAssembly.swift; sourceTree = "<group>"; };
+		ACC7A296244CFAA90036B0C1 /* ProjectsListTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListTableDataSource.swift; sourceTree = "<group>"; };
+		ACC7A298244CFAB40036B0C1 /* ProjectsListTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListTableDelegate.swift; sourceTree = "<group>"; };
+		ACC7A29B244D0A2F0036B0C1 /* ProjectsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsLoader.swift; sourceTree = "<group>"; };
+		ACC7A2A1244D11A70036B0C1 /* ProjectDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectDetails.storyboard; sourceTree = "<group>"; };
+		ACC7A2A3244D11F80036B0C1 /* ProjectDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
+		ACC7A2A5244D12060036B0C1 /* ProjectDetailsViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewType.swift; sourceTree = "<group>"; };
+		ACC7A2A7244D12100036B0C1 /* ProjectDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsRouter.swift; sourceTree = "<group>"; };
+		ACC7A2A9244D121C0036B0C1 /* ProjectDetailsRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsRouterType.swift; sourceTree = "<group>"; };
+		ACC7A2AB244D12270036B0C1 /* ProjectDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsPresenter.swift; sourceTree = "<group>"; };
+		ACC7A2AD244D12320036B0C1 /* ProjectDetailsPresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsPresenterType.swift; sourceTree = "<group>"; };
+		ACC7A2AF244D123D0036B0C1 /* ProjectDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsAssembly.swift; sourceTree = "<group>"; };
+		ACC7A2B1244D14C20036B0C1 /* ProjectsLoaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsLoaderType.swift; sourceTree = "<group>"; };
+		ACC7A2D8244DF4D70036B0C1 /* Drawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC78BE3A244903D70012E9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC24B041244BC0F300E50AA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC24B050244BCD0800E50AA4 /* DrawableElement.swift */,
+				AC24B066244CE75B00E50AA4 /* DrawableElementWithChild.swift */,
+				AC24B064244CB3EB00E50AA4 /* Projects.swift */,
+				AC24B044244BC13F00E50AA4 /* ProjectItem.swift */,
+				AC24B042244BC0FE00E50AA4 /* Project.swift */,
+				AC24B046244BC18300E50AA4 /* Floor.swift */,
+				AC24B048244BC21000E50AA4 /* Room.swift */,
+				AC24B04A244BC25600E50AA4 /* Wall.swift */,
+				AC24B04C244BC29800E50AA4 /* Point.swift */,
+				AC24B04E244BC38D00E50AA4 /* Window.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC24B052244BD34E00E50AA4 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9CF2450ACF1002A33E6 /* Models */,
+				ACC7A2D5244DF4B40036B0C1 /* Draw */,
+				AC24B053244BD35900E50AA4 /* DrawEngine.swift */,
+				AC90B9B9244FD559002A33E6 /* DrawerBuilder.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		AC24B061244CA87E00E50AA4 /* RPError */ = {
+			isa = PBXGroup;
+			children = (
+				AC24B062244CA88700E50AA4 /* RPError.swift */,
+			);
+			path = RPError;
+			sourceTree = "<group>";
+		};
+		AC78BE34244903D70012E9EC = {
+			isa = PBXGroup;
+			children = (
+				AC78BE3F244903D70012E9EC /* RoomPlanDrawer */,
+				AC78BE3E244903D70012E9EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC78BE3E244903D70012E9EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC78BE3D244903D70012E9EC /* RoomPlanDrawer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC78BE3F244903D70012E9EC /* RoomPlanDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				AC78BE54244906E90012E9EC /* Classes */,
+				AC78BE40244903D70012E9EC /* AppDelegate.swift */,
+				AC78BE49244903DC0012E9EC /* Assets.xcassets */,
+				AC78BE4B244903DC0012E9EC /* LaunchScreen.storyboard */,
+				AC78BE4E244903DC0012E9EC /* Info.plist */,
+			);
+			path = RoomPlanDrawer;
+			sourceTree = "<group>";
+		};
+		AC78BE54244906E90012E9EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC24B061244CA87E00E50AA4 /* RPError */,
+				AC24B041244BC0F300E50AA4 /* Models */,
+				AC78BE55244906E90012E9EC /* Staff */,
+				ACC7A27E244CF2E80036B0C1 /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC78BE55244906E90012E9EC /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9BD24502BA0002A33E6 /* Networking */,
+				ACC7A29A244D0A220036B0C1 /* ProjectsLoader */,
+				AC24B052244BD34E00E50AA4 /* Engine */,
+			);
+			path = Staff;
+			sourceTree = "<group>";
+		};
+		AC90B9BD24502BA0002A33E6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9BE24502BA0002A33E6 /* NetworkManager.swift */,
+				AC90B9BF24502BA0002A33E6 /* Requests */,
+				AC90B9C224502BA0002A33E6 /* Flow */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AC90B9BF24502BA0002A33E6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9C024502BA0002A33E6 /* ProjectRequest.swift */,
+				AC90B9C124502BA0002A33E6 /* NetworkRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		AC90B9C224502BA0002A33E6 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9C324502BA0002A33E6 /* ProjectsFlowType.swift */,
+				AC90B9C424502BA0002A33E6 /* ProjectsFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		AC90B9CA245043FA002A33E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9CB24504408002A33E6 /* LoadableView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC90B9CF2450ACF1002A33E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9D02450AD01002A33E6 /* RoomDrawModel.swift */,
+				AC90B9D22450AD0C002A33E6 /* WallDrawModel.swift */,
+				AC90B9D42450AD25002A33E6 /* PointDrawModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACC7A27E244CF2E80036B0C1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC90B9CA245043FA002A33E6 /* Common */,
+				ACC7A27F244CF2E80036B0C1 /* ProjectsListModule */,
+				ACC7A280244CF2E80036B0C1 /* ProjectDetailsModule */,
+			);
+			name = Modules;
+			path = RoomPlanDrawer/Classes/Modules;
+			sourceTree = SOURCE_ROOT;
+		};
+		ACC7A27F244CF2E80036B0C1 /* ProjectsListModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A282244CF3250036B0C1 /* Assembly */,
+				ACC7A281244CF3250036B0C1 /* Presenter */,
+				ACC7A283244CF3250036B0C1 /* Router */,
+				ACC7A284244CF3250036B0C1 /* View */,
+				ACC7A285244CF3370036B0C1 /* ProjectsList.storyboard */,
+			);
+			path = ProjectsListModule;
+			sourceTree = "<group>";
+		};
+		ACC7A280244CF2E80036B0C1 /* ProjectDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2A0244D11990036B0C1 /* Assembly */,
+				ACC7A29F244D11990036B0C1 /* Presenter */,
+				ACC7A29E244D11990036B0C1 /* Router */,
+				ACC7A29D244D11980036B0C1 /* View */,
+				ACC7A2A1244D11A70036B0C1 /* ProjectDetails.storyboard */,
+			);
+			path = ProjectDetailsModule;
+			sourceTree = "<group>";
+		};
+		ACC7A281244CF3250036B0C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A28F244CF3900036B0C1 /* ProjectsListPresenter.swift */,
+				ACC7A291244CF39B0036B0C1 /* ProjectsListPresenterType.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ACC7A282244CF3250036B0C1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A293244CF3AA0036B0C1 /* ProjectsListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		ACC7A283244CF3250036B0C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A28B244CF3790036B0C1 /* ProjectsListRouter.swift */,
+				ACC7A28D244CF3840036B0C1 /* ProjectsListRouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		ACC7A284244CF3250036B0C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A295244CFA860036B0C1 /* Staff */,
+				ACC7A287244CF35F0036B0C1 /* ProjectsListView.swift */,
+				ACC7A289244CF36A0036B0C1 /* ProjectsListViewType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACC7A295244CFA860036B0C1 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A296244CFAA90036B0C1 /* ProjectsListTableDataSource.swift */,
+				ACC7A298244CFAB40036B0C1 /* ProjectsListTableDelegate.swift */,
+			);
+			path = Staff;
+			sourceTree = "<group>";
+		};
+		ACC7A29A244D0A220036B0C1 /* ProjectsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A29B244D0A2F0036B0C1 /* ProjectsLoader.swift */,
+				ACC7A2B1244D14C20036B0C1 /* ProjectsLoaderType.swift */,
+			);
+			path = ProjectsLoader;
+			sourceTree = "<group>";
+		};
+		ACC7A29D244D11980036B0C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2A3244D11F80036B0C1 /* ProjectDetailsView.swift */,
+				ACC7A2A5244D12060036B0C1 /* ProjectDetailsViewType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACC7A29E244D11990036B0C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2A7244D12100036B0C1 /* ProjectDetailsRouter.swift */,
+				ACC7A2A9244D121C0036B0C1 /* ProjectDetailsRouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		ACC7A29F244D11990036B0C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2AB244D12270036B0C1 /* ProjectDetailsPresenter.swift */,
+				ACC7A2AD244D12320036B0C1 /* ProjectDetailsPresenterType.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ACC7A2A0244D11990036B0C1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2AF244D123D0036B0C1 /* ProjectDetailsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		ACC7A2D5244DF4B40036B0C1 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				ACC7A2D8244DF4D70036B0C1 /* Drawable.swift */,
+				AC9CC230245387EF00A486AA /* RoomDrawer.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC78BE3C244903D70012E9EC /* RoomPlanDrawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC78BE51244903DC0012E9EC /* Build configuration list for PBXNativeTarget "RoomPlanDrawer" */;
+			buildPhases = (
+				AC78BE39244903D70012E9EC /* Sources */,
+				AC78BE3A244903D70012E9EC /* Frameworks */,
+				AC78BE3B244903D70012E9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomPlanDrawer;
+			productName = RoomPlanDrawer;
+			productReference = AC78BE3D244903D70012E9EC /* RoomPlanDrawer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC78BE35244903D70012E9EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ruslan Maley";
+				TargetAttributes = {
+					AC78BE3C244903D70012E9EC = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AC78BE38244903D70012E9EC /* Build configuration list for PBXProject "RoomPlanDrawer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC78BE34244903D70012E9EC;
+			productRefGroup = AC78BE3E244903D70012E9EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC78BE3C244903D70012E9EC /* RoomPlanDrawer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC78BE3B244903D70012E9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC7A286244CF3370036B0C1 /* ProjectsList.storyboard in Resources */,
+				AC78BE4D244903DC0012E9EC /* LaunchScreen.storyboard in Resources */,
+				ACC7A2A2244D11A70036B0C1 /* ProjectDetails.storyboard in Resources */,
+				AC78BE4A244903DC0012E9EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC78BE39244903D70012E9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC24B067244CE75B00E50AA4 /* DrawableElementWithChild.swift in Sources */,
+				ACC7A28E244CF3840036B0C1 /* ProjectsListRouterType.swift in Sources */,
+				ACC7A2AE244D12320036B0C1 /* ProjectDetailsPresenterType.swift in Sources */,
+				AC90B9C924502BA0002A33E6 /* ProjectsFlow.swift in Sources */,
+				AC90B9D12450AD01002A33E6 /* RoomDrawModel.swift in Sources */,
+				AC24B054244BD35900E50AA4 /* DrawEngine.swift in Sources */,
+				AC90B9C624502BA0002A33E6 /* ProjectRequest.swift in Sources */,
+				AC24B063244CA88700E50AA4 /* RPError.swift in Sources */,
+				ACC7A2AC244D12270036B0C1 /* ProjectDetailsPresenter.swift in Sources */,
+				ACC7A29C244D0A2F0036B0C1 /* ProjectsLoader.swift in Sources */,
+				AC24B049244BC21000E50AA4 /* Room.swift in Sources */,
+				AC90B9C824502BA0002A33E6 /* ProjectsFlowType.swift in Sources */,
+				AC24B04D244BC29800E50AA4 /* Point.swift in Sources */,
+				AC90B9CC24504409002A33E6 /* LoadableView.swift in Sources */,
+				AC9CC231245387EF00A486AA /* RoomDrawer.swift in Sources */,
+				AC24B04B244BC25600E50AA4 /* Wall.swift in Sources */,
+				AC90B9BA244FD559002A33E6 /* DrawerBuilder.swift in Sources */,
+				AC90B9D52450AD25002A33E6 /* PointDrawModel.swift in Sources */,
+				ACC7A297244CFAA90036B0C1 /* ProjectsListTableDataSource.swift in Sources */,
+				ACC7A2B0244D123D0036B0C1 /* ProjectDetailsAssembly.swift in Sources */,
+				ACC7A2A4244D11F80036B0C1 /* ProjectDetailsView.swift in Sources */,
+				AC90B9C524502BA0002A33E6 /* NetworkManager.swift in Sources */,
+				ACC7A2A6244D12060036B0C1 /* ProjectDetailsViewType.swift in Sources */,
+				ACC7A28C244CF3790036B0C1 /* ProjectsListRouter.swift in Sources */,
+				ACC7A290244CF3900036B0C1 /* ProjectsListPresenter.swift in Sources */,
+				AC24B065244CB3EB00E50AA4 /* Projects.swift in Sources */,
+				ACC7A28A244CF36A0036B0C1 /* ProjectsListViewType.swift in Sources */,
+				ACC7A2D9244DF4D70036B0C1 /* Drawable.swift in Sources */,
+				ACC7A288244CF35F0036B0C1 /* ProjectsListView.swift in Sources */,
+				ACC7A2AA244D121C0036B0C1 /* ProjectDetailsRouterType.swift in Sources */,
+				AC78BE41244903D70012E9EC /* AppDelegate.swift in Sources */,
+				AC24B047244BC18300E50AA4 /* Floor.swift in Sources */,
+				ACC7A292244CF39B0036B0C1 /* ProjectsListPresenterType.swift in Sources */,
+				ACC7A294244CF3AA0036B0C1 /* ProjectsListAssembly.swift in Sources */,
+				AC90B9D32450AD0C002A33E6 /* WallDrawModel.swift in Sources */,
+				AC24B04F244BC38D00E50AA4 /* Window.swift in Sources */,
+				AC24B051244BCD0800E50AA4 /* DrawableElement.swift in Sources */,
+				ACC7A299244CFAB40036B0C1 /* ProjectsListTableDelegate.swift in Sources */,
+				AC24B045244BC13F00E50AA4 /* ProjectItem.swift in Sources */,
+				AC90B9C724502BA0002A33E6 /* NetworkRequest.swift in Sources */,
+				AC24B043244BC0FE00E50AA4 /* Project.swift in Sources */,
+				ACC7A2B2244D14C20036B0C1 /* ProjectsLoaderType.swift in Sources */,
+				ACC7A2A8244D12100036B0C1 /* ProjectDetailsRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC78BE4B244903DC0012E9EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC78BE4C244903DC0012E9EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC78BE4F244903DC0012E9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC78BE50244903DC0012E9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC78BE52244903DC0012E9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AEYX6Y2PN8;
+				INFOPLIST_FILE = RoomPlanDrawer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruslanmaley.RoomPlanDrawer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC78BE53244903DC0012E9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AEYX6Y2PN8;
+				INFOPLIST_FILE = RoomPlanDrawer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruslanmaley.RoomPlanDrawer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC78BE38244903D70012E9EC /* Build configuration list for PBXProject "RoomPlanDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC78BE4F244903DC0012E9EC /* Debug */,
+				AC78BE50244903DC0012E9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC78BE51244903DC0012E9EC /* Build configuration list for PBXNativeTarget "RoomPlanDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC78BE52244903DC0012E9EC /* Debug */,
+				AC78BE53244903DC0012E9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC78BE35244903D70012E9EC /* Project object */;
+}
